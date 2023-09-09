@@ -1,0 +1,91 @@
+@charset "uft-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+a { text-decoration: none; color: inherit;}
+li { list-style: none;}
+img {max-width: 100%;}
+body{font-family: "Noto Sans KR", sans-serif;}
+#wrap {width: 100%;}
+
+header { padding: 20px 100px 0 100px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  z-index: 995;
+}
+header:hover {
+  border-bottom: 1px solid gray;
+}
+header .logo{ width: 200px}
+header .logo > img{ display: block;}
+
+.eee {
+  display: flex;
+}
+nav {
+  margin: 0 30px 0 0;
+}
+nav>ul {display: flex;}
+nav>ul>li {width: 120px; text-align: center; position: relative;}
+nav>ul>li>a {
+  display: block;
+  margin: 20px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+nav>ul>li>a:hover { font-weight: 800;}
+nav>ul>li>ul {
+  position: absolute; top: 100%; left: 0; text-align: center; white-space: nowrap;
+  z-index: 998;
+  display: none;
+}
+nav>ul>li>ul>li {padding: 8px 0;}
+nav>ul>li>ul>li>a {
+  width: 120px;
+  display: block;
+  font-weight: 500;
+}
+nav>ul>li>ul>li>a:hover {font-weight: 800;}
+
+
+select { margin: 20px 10px;
+  width: 100px;
+  height: 30px;
+  white-space: nowrap;
+}
+
+.mall {
+  padding: 20px 0;
+  white-space: nowrap;
+}
+.mall img{
+  vertical-align: bottom;
+  display: inline;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+}
+.headerhelper {
+  display: none;
+  width: calc(100% + 200px); height: 350px; position: absolute; top: 100%; left: -100px;
+  background: #fff;
+  z-index: 10;
+}
+main {position: relative; z-index: 1;}
+main .slider {
+  position: relative;overflow: hidden; width: 100%; height: 700px;}
+.slider>ul>{
+  /* z-index: 1; */
+  width: 100%;height: 700px; position: absolute; top: 0; left: 0;}
+.slider>ul>li {
+  width: 100%; height: 700px; overflow: hidden;
+}
+.slider ul li.s1{ background: url(../img/slide01.jpg) no-repeat center/cover}
+.slider ul li.s2{ background: url(../img/slide02.jpg) no-repeat center/cover}
+.slider ul li.s3{ background: url(../img/slide03.jpg) no-repeat center/cover}
+.slider ul li.s4{ background: url(../img/slide04.jpg) no-repeat center/cover}
+
+
